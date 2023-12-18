@@ -53,7 +53,7 @@ public class RequestManager {
 
     public void searchMovies(OnSearchApiListener listener, String movie_name) {
         getMovies getMovies = retrofit.create(RequestManager.getMovies.class);
-        Call<SearchApiResponse> call = getMovies.callMovies(movie_name, " ");
+        Call<SearchApiResponse> call = getMovies.callMovies(movie_name, "626ac90eafd973bdc15134b6595350a3 ");
 
         call.enqueue(new Callback<SearchApiResponse>() {
             @Override
@@ -115,7 +115,7 @@ public class RequestManager {
         @Headers({
                 "end_point:/movie/popular",
                 "Accept: application/json",
-                "api_key: 6b8db85ce1e45beacf91815f5643cd76",
+                "api_key: 626ac90eafd973bdc15134b6595350a3",
 
         })
         @GET("film/{movie_id}")
